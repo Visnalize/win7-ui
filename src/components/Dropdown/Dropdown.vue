@@ -1,13 +1,16 @@
 <template>
-  <select class="winui-dropdown" @change="handleChange">
-    <option
-      v-for="option in options"
-      :key="option.value"
-      :value="option.value"
-      :selected="selected === option.value"
-    >
-      {{ option.label }}
-    </option>
+  <select class="winui-dropdown" v-model="computedValue">
+    <template v-if="options">
+      <option
+        v-for="option in options"
+        :key="option.value"
+        :value="option.value"
+        :selected="selected === option.value"
+      >
+        {{ option.label }}
+      </option>
+    </template>
+    <slot v-else />
   </select>
 </template>
 
@@ -15,12 +18,28 @@
 export default {
   name: "WinuiDropdown",
   props: {
+    value: [Number, String],
     options: Array,
-    selected: Number,
   },
-  methods: {
-    handleChange(e) {
-      this.$emit("change", e.target.value);
+  computed: {
+    computedValue: {
+      get() {
+        return this.selected;
+      },
+      set(value) {
+        this.selected = value;
+        this.$emit("input", value);
+      },
+    },
+  },
+  data() {
+    return {
+      selected: this.value,
+    };
+  },
+  watch: {
+    value(value) {
+      this.selected = value;
     },
   },
 };

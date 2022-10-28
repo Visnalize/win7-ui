@@ -1,5 +1,5 @@
 <template>
-  <button class="winui-button" @click="handleClick">
+  <button class="winui-button" v-on="$listeners">
     <slot />
   </button>
 </template>
@@ -7,17 +7,6 @@
 <script>
 export default {
   name: "WinuiButton",
-  props: {
-    enablePropagation: Boolean,
-  },
-  methods: {
-    handleClick(event) {
-      if (!this.enablePropagation) {
-        event.stopPropagation();
-      }
-      this.$emit("click", event);
-    },
-  },
 };
 </script>
 

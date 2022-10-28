@@ -1,4 +1,4 @@
-# win7-ui
+# win7-ui (⚠ beta)
 
 Vue2 component library for recreating Windows 7 UI.
 

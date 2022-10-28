@@ -8,9 +8,9 @@
   integrity sha512-xjPmDBUPNu88K6r6+bKeHWpqxOupVn6AH2eN7oRiovQ3IDlH92h7htxVADN0YP5sqzbXTqCN4x8GBe4j9WU+yA==
 
 "@babel/parser@^7.18.4":
-  version "7.19.6"
-  resolved "https://registry.yarnpkg.com/@babel/parser/-/parser-7.19.6.tgz#b923430cb94f58a7eae8facbffa9efd19130e7f8"
-  integrity sha512-h1IUp81s2JYJ3mRkdxJgs4UvmSsRvDrx5ICSJbPvtWYv5i1nTBGcBpnog+89rAFMwvvru6E5NUHdBe01UeSzYA==
+  version "7.20.0"
+  resolved "https://registry.yarnpkg.com/@babel/parser/-/parser-7.20.0.tgz#b26133c888da4d79b0d3edcf42677bcadc783046"
+  integrity sha512-G9VgAhEaICnz8iiJeGJQyVl6J2nTjbW0xeisva0PK6XcKsga7BIaqm4ZF8Rg1Wbaqmy6znspNqhPaPkyukujzg==
 
 "@babel/standalone@^7.19.6":
   version "7.19.6"

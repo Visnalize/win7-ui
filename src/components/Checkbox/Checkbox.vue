@@ -1,8 +1,8 @@
 <template>
   <div class="winui-checkbox">
     <input
+      v-model="computedValue"
       :id="id"
-      :value="value"
       :name="name"
       :checked="checked"
       :disabled="disabled"
@@ -18,9 +18,30 @@ export default {
   props: {
     id: { type: String, required: true },
     name: String,
-    value: String,
+    value: [Number, String, Boolean],
     checked: Boolean,
     disabled: Boolean,
+  },
+  computed: {
+    computedValue: {
+      get() {
+        return this.input;
+      },
+      set(value) {
+        this.input = value;
+        this.$emit("input", value);
+      },
+    },
+  },
+  data() {
+    return {
+      input: this.value,
+    };
+  },
+  watch: {
+    value(value) {
+      this.input = value;
+    },
   },
 };
 </script>

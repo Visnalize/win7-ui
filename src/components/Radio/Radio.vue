@@ -1,11 +1,12 @@
 <template>
   <div class="winui-radio">
     <input
+      v-model="computedValue"
       :id="id"
-      :value="value"
       :name="name"
       :checked="checked"
       :disabled="disabled"
+      :value="nativeValue"
       type="radio"
     />
     <label :for="id"><slot /></label>
@@ -18,13 +19,33 @@ export default {
   props: {
     id: { type: String, required: true },
     name: String,
-    value: String,
+    value: [Number, String, Boolean],
+    nativeValue: [Number, String, Boolean],
     checked: Boolean,
     disabled: Boolean,
+  },
+  computed: {
+    computedValue: {
+      get() {
+        return this.input;
+      },
+      set(value) {
+        this.input = value;
+        this.$emit("input", value);
+      },
+    },
+  },
+  data() {
+    return {
+      input: this.value,
+    };
+  },
+  watch: {
+    value(value) {
+      this.input = value;
+    },
   },
 };
 </script>
 
 <style scoped src="7.css/dist/gui/radiobutton.css"></style>
-
-<style lang="scss" scoped></style>
