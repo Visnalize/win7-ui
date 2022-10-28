@@ -1,12 +1,23 @@
 {
   "name": "win7-ui",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Vue2 component library for recreating Windows 7 UI",
-  "main": "src/index.js",
   "license": "MIT",
+  "main": "lib/win7-ui.umd.js",
+  "module": "lib/win7-ui.mjs",
+  "exports": {
+    ".": {
+      "import": "./lib/win7-ui.mjs",
+      "require": "./lib/win7-ui.umd.cjs"
+    }
+  },
+  "files": [
+    "lib"
+  ],
   "scripts": {
     "dev": "vite",
-    "build": "vite build",
+    "build": "vite build --mode lib",
+    "build:docs": "vite build --mode docs",
     "preview": "vite preview --port 4173",
     "test:e2e": "start-server-and-test preview http://localhost:4173/ 'cypress open --e2e'",
     "test:e2e:ci": "start-server-and-test preview http://localhost:4173/ 'cypress run --e2e'",
