@@ -16,6 +16,7 @@ yarn add win7-ui
 // main.js or index.js
 import Vue from "vue";
 import Winui from "win7-ui";
+import "win7-ui/lib/style.css";
 ...
 Vue.use(Winui);
 

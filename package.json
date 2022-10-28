@@ -1,19 +1,24 @@
 {
   "name": "win7-ui",
-  "version": "0.0.2",
+  "version": "0.0.4",
   "description": "Vue2 component library for recreating Windows 7 UI",
   "license": "MIT",
-  "main": "lib/win7-ui.umd.js",
-  "module": "lib/win7-ui.mjs",
+  "main": "./lib/index.umd.js",
+  "module": "./lib/index.mjs",
+  "types": "./types/index.d.ts",
   "exports": {
     ".": {
-      "import": "./lib/win7-ui.mjs",
-      "require": "./lib/win7-ui.umd.cjs"
+      "import": "./lib/index.mjs",
+      "require": "./lib/index.umd.cjs"
     }
   },
   "files": [
-    "lib"
+    "lib",
+    "types"
   ],
+  "repository": {
+    "url": "https://github.com/Visnalize/win7-ui"
+  },
   "scripts": {
     "dev": "vite",
     "build": "vite build --mode lib",
@@ -23,7 +28,8 @@
     "test:e2e:ci": "start-server-and-test preview http://localhost:4173/ 'cypress run --e2e'",
     "test:unit": "cypress open --component",
     "test:unit:ci": "cypress run --component --quiet --reporter spec",
-    "lint": "eslint . --ext .vue,.js,.jsx,.cjs,.mjs --fix --ignore-path .gitignore"
+    "lint": "eslint . --ext .vue,.js,.jsx,.cjs,.mjs --fix --ignore-path .gitignore",
+    "prepublish": "yarn build"
   },
   "dependencies": {
     "7.css": "^0.8.1",
