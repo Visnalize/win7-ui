@@ -1,4 +1,4 @@
-# win7-ui (⚠ beta)
+# win7-ui ⚠ beta
 
 Vue2 component library for recreating Windows 7 UI.
 
@@ -28,22 +28,10 @@ new Vue({
 ```html
 <template>
   <winui-button @click="doSomething">Hello world!</winui-button>
-  <winui-dropdown :options="options" />
 </template>
 
 <script>
 export default {
-  data() {
-    return {
-      options: [
-        "5 - Incredible!",
-        "4 - Great!",
-        "3 - Pretty good",
-        "2 - Not so great",
-        "1 - Unfortunate",
-      ]
-    }
-  },
   methods: {
     doSomething() {}
   }

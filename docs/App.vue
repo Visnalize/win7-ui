@@ -28,11 +28,41 @@
       I am disabled
     </winui-checkbox>
     <winui-balloon> ABC </winui-balloon>
-    <winui-dropdown
-      :options="options"
-      :selected="2"
-      @change="onDropdownChange"
-    />
+    <winui-dropdown :options="options" :value="2" @change="onDropdownChange" />
+    <winui-treeview class="has-collapse-button">
+      <winui-collapse open title="Javascript">
+        <ul>
+          <li>Avoid at all costs</li>
+          <li>
+            <winui-collapse>
+              <template #title>
+                <span class="collapse-title">
+                  <img
+                    src="https://img.icons8.com/color/18/000000/monitor--v1.png"
+                  />
+                  Unless
+                </span>
+              </template>
+              <ul>
+                <li>Avoid</li>
+                <li>
+                  <winui-collapse title="At">
+                    <ul>
+                      <li>Avoid</li>
+                      <li>At</li>
+                      <li>All</li>
+                      <li>Cost</li>
+                    </ul>
+                  </winui-collapse>
+                </li>
+                <li>All</li>
+                <li>Cost</li>
+              </ul>
+            </winui-collapse>
+          </li>
+        </ul>
+      </winui-collapse>
+    </winui-treeview>
   </div>
 </template>
 
@@ -62,4 +92,9 @@ export default {
 };
 </script>
 
-<style></style>
+<style>
+.collapse-title img {
+  display: inline-block;
+  vertical-align: bottom;
+}
+</style>
