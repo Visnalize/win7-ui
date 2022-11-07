@@ -4,7 +4,6 @@
       v-model="computedValue"
       :id="id"
       :name="name"
-      :checked="checked"
       :disabled="disabled"
       type="checkbox"
     />
@@ -19,7 +18,6 @@ export default {
     id: { type: String, required: true },
     name: String,
     value: [Number, String, Boolean],
-    checked: Boolean,
     disabled: Boolean,
   },
   computed: {

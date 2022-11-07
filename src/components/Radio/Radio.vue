@@ -4,7 +4,6 @@
       v-model="computedValue"
       :id="id"
       :name="name"
-      :checked="checked"
       :disabled="disabled"
       :value="nativeValue"
       type="radio"
@@ -21,7 +20,6 @@ export default {
     name: String,
     value: [Number, String, Boolean],
     nativeValue: [Number, String, Boolean],
-    checked: Boolean,
     disabled: Boolean,
   },
   computed: {

@@ -45,4 +45,4 @@ export default {
 };
 </script>
 
-<style scoped src="7.css/dist/gui/select.css"></style>
+<style scoped src="7.css/dist/gui/dropdown.css"></style>

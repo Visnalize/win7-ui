@@ -18,17 +18,15 @@
         Auto
       </winui-radio>
     </winui-groupbox>
-    <winui-checkbox id="check1" value="1" name="check" checked>
+    <winui-checkbox id="check1" name="check" v-model="isChecked">
       I am checked
     </winui-checkbox>
-    <winui-checkbox id="check2" value="2" name="check">
-      I am free
-    </winui-checkbox>
-    <winui-checkbox id="check3" value="3" name="check" disabled>
+    <winui-checkbox id="check2" name="check">I am free</winui-checkbox>
+    <winui-checkbox id="check3" name="check" disabled>
       I am disabled
     </winui-checkbox>
     <winui-balloon> ABC </winui-balloon>
-    <winui-dropdown :options="options" :value="2" @change="onDropdownChange" />
+    <winui-dropdown :options="options" v-model="dropdownValue" />
     <winui-treeview class="has-collapse-button">
       <winui-collapse open title="Javascript">
         <ul>
@@ -63,6 +61,37 @@
         </ul>
       </winui-collapse>
     </winui-treeview>
+    <winui-listbox
+      class="has-hover"
+      :items="options"
+      v-model="listboxValue"
+    ></winui-listbox>
+    <winui-slider max="10" min="1" v-model="sliderValue" />
+    <winui-menubar class="can-hover">
+      <winui-menuitem>
+        File
+        <winui-menu>
+          <winui-menuitem><button>Open</button></winui-menuitem>
+          <winui-menuitem><button>Save</button></winui-menuitem>
+          <winui-menuitem><button>Exit</button></winui-menuitem>
+        </winui-menu>
+      </winui-menuitem>
+      <winui-menuitem>Edit</winui-menuitem>
+      <winui-menuitem>View</winui-menuitem>
+      <winui-menuitem>Help</winui-menuitem>
+    </winui-menubar>
+    <winui-menu class="can-hover" style="width: 300px">
+      <winui-menuitem>
+        View
+        <winui-menu>
+          <winui-menuitem><button>Large icons</button></winui-menuitem>
+          <winui-menuitem><button>Medium icons</button></winui-menuitem>
+          <winui-menuitem><button>Small icons</button></winui-menuitem>
+        </winui-menu>
+      </winui-menuitem>
+      <winui-menuitem><button>Sort by</button></winui-menuitem>
+      <winui-menuitem><button>Refresh</button></winui-menuitem>
+    </winui-menu>
   </div>
 </template>
 
@@ -76,19 +105,19 @@ export default {
         softs: "Software",
       },
       options: [
-        { label: "5 - Incredible!", value: 0 },
-        { label: "4 - Great!", value: 1 },
-        { label: "3 - Pretty good!", value: 2 },
-        { label: "2 - Not so great!", value: 3 },
-        { label: "1 - Unfortunate!", value: 4 },
+        { label: "5 - Incredible!", value: "incredible" },
+        { label: "4 - Great!", value: "great" },
+        { label: "3 - Pretty good!", value: "good" },
+        { label: "2 - Not so great!", value: "not so" },
+        { label: "1 - Unfortunate!", value: "ew" },
       ],
+      listboxValue: "good",
+      dropdownValue: "great",
+      sliderValue: 4,
+      isChecked: true,
     };
   },
-  methods: {
-    onDropdownChange(value) {
-      console.log(value);
-    },
-  },
+  methods: {},
 };
 </script>
 
