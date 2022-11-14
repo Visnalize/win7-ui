@@ -84,13 +84,25 @@
       <winui-menuitem>
         View
         <winui-menu>
-          <winui-menuitem><button>Large icons</button></winui-menuitem>
-          <winui-menuitem><button>Medium icons</button></winui-menuitem>
-          <winui-menuitem><button>Small icons</button></winui-menuitem>
+          <winui-menuitem :option="menuOption('lg')" v-model="menuOptionValue"
+            >Large icons</winui-menuitem
+          >
+          <winui-menuitem :option="menuOption('md')" v-model="menuOptionValue"
+            >Medium icons</winui-menuitem
+          >
+          <winui-menuitem :option="menuOption('sm')" v-model="menuOptionValue"
+            >Small icons</winui-menuitem
+          >
+          <hr />
+          <winui-menuitem :option="{ as: 'checkbox', id: 'arrange-icons' }"
+            >Auto arrange icons</winui-menuitem
+          >
         </winui-menu>
       </winui-menuitem>
+      <hr />
       <winui-menuitem><button>Sort by</button></winui-menuitem>
       <winui-menuitem><button>Refresh</button></winui-menuitem>
+      <winui-menuitem><button>Display</button></winui-menuitem>
     </winui-menu>
   </div>
 </template>
@@ -115,7 +127,19 @@ export default {
       dropdownValue: "great",
       sliderValue: 4,
       isChecked: true,
+      menuOption: (size) => ({
+        as: "radio",
+        id: "icon-size-" + size,
+        name: "icon-size",
+        nativeValue: size,
+      }),
+      menuOptionValue: "md",
     };
+  },
+  watch: {
+    menuOptionValue(value) {
+      console.log(value);
+    },
   },
   methods: {},
 };

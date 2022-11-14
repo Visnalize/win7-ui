@@ -1,5 +1,5 @@
 <template>
-  <input type="range" class="winui-slider" />
+  <input type="range" class="winui-slider" v-on="$listeners" />
 </template>
 
 <script>
