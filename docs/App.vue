@@ -140,6 +140,9 @@ export default {
     menuOptionValue(value) {
       console.log(value);
     },
+    sliderValue(value) {
+      console.log(value);
+    },
   },
   methods: {},
 };
