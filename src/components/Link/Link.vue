@@ -1,10 +1,10 @@
 <template>
   <a v-if="href" :href="href" class="winui-link">
-    <winui-icon :src="icon" :alt="text" :size="16" />
+    <winui-icon v-if="icon" :src="icon" :alt="text" :size="16" />
     <span>{{ text }}</span>
   </a>
   <button v-else class="winui-link">
-    <winui-icon :src="icon" :alt="text" :size="16" />
+    <winui-icon v-if="icon" :src="icon" :alt="text" :size="16" />
     <span>{{ text }}</span>
   </button>
 </template>

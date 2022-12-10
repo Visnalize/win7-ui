@@ -4,6 +4,7 @@ import Checkbox from "./Checkbox/register";
 import Collapse from "./Collapse/register";
 import Dropdown from "./Dropdown/register";
 import Groupbox from "./Groupbox/register";
+import Icon from "./Icon/register";
 import Link from "./Link/register";
 import Listbox from "./Listbox/register";
 import { Menu, MenuBar, MenuItem } from "./Menu/register";
@@ -21,6 +22,7 @@ export {
   Collapse,
   Dropdown,
   Groupbox,
+  Icon,
   Link,
   Listbox,
   Menu,

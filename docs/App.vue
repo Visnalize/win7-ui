@@ -35,8 +35,9 @@
             <winui-collapse>
               <template #title>
                 <span class="collapse-title">
-                  <img
-                    src="https://img.icons8.com/color/18/000000/monitor--v1.png"
+                  <winui-icon
+                    src="https://img.icons8.com/color/16/000000/monitor--v1.png"
+                    size="16"
                   />
                   Unless
                 </span>
