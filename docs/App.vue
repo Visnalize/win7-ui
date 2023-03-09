@@ -3,6 +3,7 @@
     <winui-button class="default">default button</winui-button>
     <winui-button>Click me</winui-button>
     <winui-link text="link" icon="https://abs.twimg.com/favicons/twitter.ico" />
+    <winui-link text="button" @click="handleLinkClick" />
     <winui-tabs :tabs="tabs">
       <template #apps> apps </template>
       <template #games> games </template>
@@ -145,7 +146,11 @@ export default {
       console.log(value);
     },
   },
-  methods: {},
+  methods: {
+    handleLinkClick() {
+      alert("ok");
+    },
+  },
 };
 </script>
 

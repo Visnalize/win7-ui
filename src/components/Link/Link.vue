@@ -3,7 +3,7 @@
     <winui-icon v-if="icon" :src="icon" :alt="text" :size="16" />
     <span>{{ text }}</span>
   </a>
-  <button v-else class="winui-link">
+  <button v-else class="winui-link" v-on="$listeners">
     <winui-icon v-if="icon" :src="icon" :alt="text" :size="16" />
     <span>{{ text }}</span>
   </button>

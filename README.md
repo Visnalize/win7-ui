@@ -1,4 +1,8 @@
-# win7-ui ⚠ beta
+# win7-ui
+
+![beta](https://img.shields.io/badge/Beta-Unstable-orange)
+[![npm](https://img.shields.io/npm/v/win7-ui)](http://npm.im/win7-ui)
+![npm](https://img.shields.io/npm/dt/win7-ui)
 
 Vue2 component library for recreating Windows 7 UI.
 
