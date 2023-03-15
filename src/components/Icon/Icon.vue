@@ -8,7 +8,7 @@ export default {
   props: {
     src: String,
     alt: String,
-    size: Number,
+    size: [String, Number],
   },
 };
 </script>

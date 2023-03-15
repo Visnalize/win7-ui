@@ -17,7 +17,7 @@
       :hidden="activeTab !== tab"
       role="tabpanel"
     >
-      <slot :name="tab" />
+      <slot :name="tab" :hidden="activeTab !== tab" />
     </article>
   </div>
 </template>
