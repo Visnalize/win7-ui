@@ -106,7 +106,7 @@
       <winui-menuitem><button>Refresh</button></winui-menuitem>
       <winui-menuitem><button>Display</button></winui-menuitem>
     </winui-menu>
-    <winui-searchbox placeholder="Search" />
+    <winui-searchbox placeholder="Search" @search="handleSearch" />
     <winui-searchbox placeholder="Search" instant />
   </div>
 </template>
@@ -151,6 +151,9 @@ export default {
   methods: {
     handleLinkClick() {
       alert("ok");
+    },
+    handleSearch(value) {
+      console.log(value);
     },
   },
 };
