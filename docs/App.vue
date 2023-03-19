@@ -106,6 +106,8 @@
       <winui-menuitem><button>Refresh</button></winui-menuitem>
       <winui-menuitem><button>Display</button></winui-menuitem>
     </winui-menu>
+    <winui-searchbox placeholder="Search" />
+    <winui-searchbox placeholder="Search" instant />
   </div>
 </template>
 

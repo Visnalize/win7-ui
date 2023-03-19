@@ -10,6 +10,7 @@ import Listbox from "./Listbox/register";
 import { Menu, MenuBar, MenuItem } from "./Menu/register";
 import Progress from "./Progress/register";
 import Radio from "./Radio/register";
+import Searchbox from "./Searchbox/register";
 import Slider from "./Slider/register";
 import Tabs from "./Tabs/register";
 import Textbox from "./Textbox/register";
@@ -30,6 +31,7 @@ export {
   MenuItem,
   Progress,
   Radio,
+  Searchbox,
   Slider,
   Tabs,
   Textbox,
