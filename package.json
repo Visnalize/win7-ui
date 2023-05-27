@@ -3,6 +3,7 @@
   "version": "0.0.16",
   "description": "Vue2 component library for recreating Windows 7 UI",
   "license": "MIT",
+  "homepage": "https://win7ui.visnalize.com",
   "main": "./lib/index.umd.js",
   "module": "./lib/index.mjs",
   "types": "./types/index.d.ts",
@@ -21,8 +22,7 @@
   },
   "scripts": {
     "dev": "vite",
-    "build": "vite build --mode lib",
-    "build:docs": "vite build --mode docs",
+    "build": "vite build",
     "preview": "vite preview --port 4173",
     "test:e2e": "start-server-and-test preview http://localhost:4173/ 'cypress open --e2e'",
     "test:e2e:ci": "start-server-and-test preview http://localhost:4173/ 'cypress run --e2e'",
@@ -31,7 +31,7 @@
     "lint": "eslint . --ext .vue,.js,.jsx,.cjs,.mjs --fix --ignore-path .gitignore"
   },
   "devDependencies": {
-    "7.css": "^0.13.0",
+    "7.css": "^0.14.0",
     "@rushstack/eslint-patch": "^1.1.0",
     "@vitejs/plugin-legacy": "^2.0.0",
     "@vitejs/plugin-vue2": "^1.1.2",

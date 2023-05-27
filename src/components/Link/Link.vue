@@ -26,7 +26,7 @@ export default {
 <style lang="scss" scoped>
 .winui-link {
   font-family: Segoe UI, sans-serif;
-  display: flex;
+  display: inline-flex;
   align-items: center;
   color: #06c;
   background: none;

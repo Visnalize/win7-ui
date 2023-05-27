@@ -1,0 +1,12 @@
+{
+  "name": "win7-ui-docs",
+  "description": "Vue2 component library for recreating Windows 7 UI",
+  "scripts": {
+    "dev": "vuepress dev src",
+    "build": "vuepress build src"
+  },
+  "license": "MIT",
+  "devDependencies": {
+    "vuepress": "^1.9.9"
+  }
+}
