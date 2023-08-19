@@ -47,12 +47,12 @@ export default {
 
 ## 📚 Documentation
 
-👉 [__Official site__](https://win7ui.visnalize.com/)
-
-## 📺 Showcase
-
-👉 [__Win7 Simu__](https://win7simu.visnalize.com/)
+_Refer to the [official site](https://win7ui.visnalize.com/)_
 
 ## 📝 Changelog
 
-👉 [__Releases__](/releases)
+_Refer to [Releases](https://github.com/Visnalize/win7-ui/releases)_
+
+## 📺 Showcase
+
+- [__Win7 Simu__](https://win7simu.visnalize.com/)
