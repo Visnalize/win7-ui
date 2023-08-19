@@ -11,6 +11,7 @@
 <script>
 export default {
   name: "WinuiSlider",
+  alias: "WinuiRange",
   props: {
     value: [String, Number],
   },

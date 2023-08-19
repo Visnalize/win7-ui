@@ -4,6 +4,8 @@
     type="search"
     class="winui-searchbox"
     :placeholder="placeholder"
+    @input="search"
+    v-model="searchValue"
     v-on="$listeners"
   />
   <div v-else class="searchbox winui-searchbox">
@@ -22,7 +24,7 @@ export default {
   name: "WinuiSearchbox",
   props: {
     instant: Boolean,
-    placeholder: String,
+    placeholder: { type: String, default: "Search" },
   },
   data() {
     return {

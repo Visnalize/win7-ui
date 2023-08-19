@@ -1,8 +1,8 @@
 <template>
   <details class="winui-collapse">
     <summary>
-      <template v-if="title">{{ title }}</template>
-      <slot v-else name="title" />
+      <slot v-if="$slots.title" name="title" />
+      <template v-else>{{ titleState }}</template>
     </summary>
     <slot />
   </details>
@@ -12,7 +12,34 @@
 export default {
   name: "WinuiCollapse",
   props: {
-    title: String,
+    title: { type: String },
+  },
+  data() {
+    return {
+      titleState: this.title || this.getDefaultTitle(),
+    };
+  },
+  watch: {
+    title(newTitle) {
+      this.titleState = newTitle;
+    },
+  },
+  mounted() {
+    this.$el.addEventListener("toggle", this.handleToggle);
+  },
+  beforeDestroy() {
+    this.$el.removeEventListener("toggle", this.handleToggle);
+  },
+  methods: {
+    handleToggle() {
+      this.$emit("toggle", this.$el.open);
+      if (!this.title) {
+        this.titleState = this.getDefaultTitle();
+      }
+    },
+    getDefaultTitle() {
+      return this.$el?.open ? "Hide" : "Show";
+    },
   },
 };
 </script>

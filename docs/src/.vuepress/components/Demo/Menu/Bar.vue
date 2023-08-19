@@ -1,0 +1,9 @@
+<template>
+  <winui-menubar>
+    <winui-menuitem>File</winui-menuitem>
+    <winui-menuitem>Edit</winui-menuitem>
+    <winui-menuitem>View</winui-menuitem>
+    <winui-menuitem>Run</winui-menuitem>
+    <winui-menuitem>Help</winui-menuitem>
+  </winui-menubar>
+</template>

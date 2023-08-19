@@ -17,7 +17,7 @@ export default {
   name: "WinuiListbox",
   props: {
     value: [Number, String],
-    items: Array,
+    items: { type: Array, required: true },
   },
   data() {
     return { selected: this.value };

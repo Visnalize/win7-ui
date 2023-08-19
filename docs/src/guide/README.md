@@ -3,8 +3,10 @@
 __Win7 UI__ is a component library for creating user interface elements in Windows 7 style in web apps built from Vue. It leverages the [7.css](https://khang-nd.github.io/7.css/) package underneath, which is a CSS-only framework with the same purpose.
 
 :::warning Note
-The library only supports __Vue 2.x__ and is still in __beta mode__.
+This library only supports __Vue 2.x__ and assumes that you are already familiar with it, if not, please check out its [documentation](https://v2.vuejs.org/guide/).
 :::
+
+<Misc-Ad />
 
 ## Installation
 
@@ -26,9 +28,9 @@ Vue.use(Winui);
 ...
 ```
 
-The components will then be available globally in your project with the prefix `winui`, an example usage as below:
+The components will then be available globally in your project with the prefix __`winui-`__, an example usage as below:
 
-```vue
+```vue{2}
 <template>
   <winui-button @click="doSomething">Hello world!</winui-button>
 </template>

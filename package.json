@@ -1,6 +1,6 @@
 {
   "name": "win7-ui",
-  "version": "0.0.16",
+  "version": "1.0.0",
   "description": "Vue2 component library for recreating Windows 7 UI",
   "license": "MIT",
   "homepage": "https://win7ui.visnalize.com",
@@ -13,6 +13,13 @@
       "require": "./lib/index.umd.cjs"
     }
   },
+  "keywords": [
+    "windows7",
+    "vue",
+    "vuejs",
+    "js",
+    "components"
+  ],
   "files": [
     "lib",
     "types"
@@ -25,7 +32,7 @@
     "build": "vite build",
     "preview": "vite preview --port 4173",
     "docs:dev": "cd docs && yarn dev",
-    "docs:build": "cd docs && yarn build",
+    "docs:build": "yarn build && cd docs && yarn build",
     "docs:deploy": "yarn docs:build && gh-pages -d docs/src/.vuepress/dist -b docs",
     "test:e2e": "start-server-and-test preview http://localhost:4173/ 'cypress open --e2e'",
     "test:e2e:ci": "start-server-and-test preview http://localhost:4173/ 'cypress run --e2e'",

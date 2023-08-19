@@ -1,6 +1,6 @@
 <template>
   <div class="winui-tabs">
-    <menu role="tablist">
+    <menu role="tablist" :class="{ justified }">
       <winui-button
         v-for="(name, tab) in tabs"
         :key="tab"
@@ -27,6 +27,7 @@ export default {
   name: "WinuiTabs",
   props: {
     tabs: { type: Object, required: true },
+    justified: Boolean,
   },
   data() {
     return { activeTab: Object.keys(this.tabs)[0] };

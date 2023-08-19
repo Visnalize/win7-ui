@@ -1,5 +1,8 @@
 <template>
   <select class="winui-dropdown" v-model="computedValue">
+    <option v-if="placeholder" :value="undefined" disabled selected>
+      {{ placeholder }}
+    </option>
     <template v-if="options">
       <option
         v-for="option in options"
@@ -17,9 +20,11 @@
 <script>
 export default {
   name: "WinuiDropdown",
+  alias: "WinuiSelect",
   props: {
     value: [Number, String],
     options: Array,
+    placeholder: String,
   },
   computed: {
     computedValue: {

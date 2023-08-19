@@ -1,11 +1,13 @@
 <template>
   <a v-if="href" :href="href" class="winui-link">
     <winui-icon v-if="icon" :src="icon" :alt="text" :size="16" />
-    <span>{{ text }}</span>
+    <span v-if="text">{{ text }}</span>
+    <slot v-else />
   </a>
   <button v-else class="winui-link" v-on="$listeners">
     <winui-icon v-if="icon" :src="icon" :alt="text" :size="16" />
-    <span>{{ text }}</span>
+    <span v-if="text">{{ text }}</span>
+    <slot v-else />
   </button>
 </template>
 
@@ -26,6 +28,8 @@ export default {
 <style lang="scss" scoped>
 .winui-link {
   font-family: Segoe UI, sans-serif;
+  font-weight: normal;
+  font-size: inherit;
   display: inline-flex;
   align-items: center;
   color: #06c;
@@ -38,7 +42,7 @@ export default {
     color: #39f;
   }
 
-  > img {
+  .winui-icon {
     margin-right: 4px;
   }
 }

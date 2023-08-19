@@ -1,5 +1,5 @@
 <template>
-  <fieldset>
+  <fieldset class="winui-groupbox">
     <legend v-if="label">{{ label }}</legend>
     <slot />
   </fieldset>

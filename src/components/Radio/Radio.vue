@@ -17,7 +17,7 @@ export default {
   name: "WinuiRadio",
   props: {
     id: { type: String, required: true },
-    name: String,
+    name: { type: String, required: true },
     value: [Number, String, Boolean],
     nativeValue: [Number, String, Boolean],
     disabled: Boolean,

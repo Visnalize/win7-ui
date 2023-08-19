@@ -10,4 +10,6 @@ pageClass: homepage
 </p>
 <p class="footer">
 MIT Licensed. Made by <winui-link href="https://visnalize.com/" target="_blank" text="Visnalize" /> with ❤️
+<br />
+Icons provided by <winui-link href="https://icons8.com/" target="_blank" text="Icons8" />
 </p>

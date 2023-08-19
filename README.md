@@ -1,14 +1,12 @@
 # win7-ui
 
-![beta](https://img.shields.io/badge/Beta-Unstable-orange)
 [![npm](https://img.shields.io/npm/v/win7-ui)](http://npm.im/win7-ui)
-![npm](https://img.shields.io/npm/dt/win7-ui)
+[![npm](https://img.shields.io/npm/dt/win7-ui)](http://npm.im/win7-ui)
+[![npm bundle size](https://img.shields.io/bundlephobia/minzip/win7-ui)](https://bundlephobia.com/result?p=win7-ui)
 
 Vue2 component library for recreating Windows 7 UI.
 
-Live Demo: [__Win7 Simu__](https://win7simu.visnalize.com/)
-
-## Quick start
+## 🚀 Quick start
 
 ```sh
 npm i win7-ui
@@ -46,3 +44,15 @@ export default {
 ...
 </style>
 ```
+
+## 📚 Documentation
+
+👉 [__Official site__](https://win7ui.visnalize.com/)
+
+## 📺 Showcase
+
+👉 [__Win7 Simu__](https://win7simu.visnalize.com/)
+
+## 📝 Changelog
+
+👉 [__Releases__](/releases)
