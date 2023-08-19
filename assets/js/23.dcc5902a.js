@@ -1,0 +1,1 @@
+(window.webpackJsonp=window.webpackJsonp||[]).push([[23],{350:function(n,c,e){"use strict";e.r(c);var t=e(14),i=Object(t.a)({},(function(){return(0,this._self._c)("winui-checkbox",{attrs:{id:"check_demo"}},[this._v("Tick me!")])}),[],!1,null,null,null);c.default=i.exports}}]);
