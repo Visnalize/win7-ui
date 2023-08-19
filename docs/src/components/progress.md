@@ -18,10 +18,10 @@
 
 ### `progress` <Badge text="optional" type="tip" />
 
-- Type: `number` | `string` | `'indeterminate'`
+- Type: `number` | `string` | `"indeterminate"`
 - Default: `0`
 
-The percentage value of the progress. If the value is `'indeterminate'`, the progress bar will animate.
+The percentage value of the progress. If the value is `"indeterminate"`, the progress bar will animate.
 
 ### `transition` <Badge text="optional" type="tip" />
 

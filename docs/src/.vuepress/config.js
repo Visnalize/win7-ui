@@ -71,4 +71,14 @@ module.exports = {
       },
     ],
   },
+
+  plugins: [
+    [
+      "autometa",
+      {
+        canonical_base: "https://win7ui.visnalize.com",
+        author: { name: "Visnalize" },
+      },
+    ],
+  ],
 };

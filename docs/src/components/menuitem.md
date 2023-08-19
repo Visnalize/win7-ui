@@ -14,7 +14,7 @@ _Refer to the [__Menu__](./menu.md) component for usage examples._
 
 ### `option` <Badge text="optional" type="tip" />
 
-- Type: `{ as: 'checkbox' | 'radio', id: string, name: string, nativeValue: any }`
+- Type: `{ as: "checkbox" | "radio", id: string, name: string, nativeValue: any }`
 - Default: `undefined`
 
 The option to render the menu item as, e.g. `checkbox`, `radio`.
