@@ -1,1 +1,0 @@
-(window.webpackJsonp=window.webpackJsonp||[]).push([[20],{349:function(t,n,u){"use strict";u.r(n);var s=u(14),l=Object(s.a)({},(function(){return(0,this._self._c)("winui-button",{staticClass:"default"},[this._v("Default button")])}),[],!1,null,null,null);n.default=l.exports}}]);

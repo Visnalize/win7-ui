@@ -1,0 +1,1 @@
+(window.webpackJsonp=window.webpackJsonp||[]).push([[21],{347:function(n,t,u){"use strict";u.r(t);var i=u(14),s=Object(i.a)({},(function(){return(0,this._self._c)("winui-button",{attrs:{disabled:""}},[this._v("You can't click me!")])}),[],!1,null,null,null);t.default=s.exports}}]);

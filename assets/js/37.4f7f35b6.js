@@ -1,1 +1,0 @@
-(window.webpackJsonp=window.webpackJsonp||[]).push([[37],{356:function(n,o,s){"use strict";s.r(o);var t=s(14),i=Object(t.a)({},(function(){return(0,this._self._c)("winui-icon",{attrs:{src:"https://img.icons8.com/matisse/100/windows-logo.png",alt:"Windows logo"}})}),[],!1,null,null,null);o.default=i.exports}}]);
