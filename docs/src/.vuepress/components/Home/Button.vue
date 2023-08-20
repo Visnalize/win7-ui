@@ -23,7 +23,7 @@ export default {
   font-size: 1.1rem;
 
   &:not(:last-child) {
-    margin-right: 8px;
+    margin: 0 0 0.5rem 0;
   }
 }
 
@@ -31,6 +31,10 @@ export default {
   .winui-button {
     padding: 1rem 2rem;
     font-size: 1.5rem;
+
+    &:not(:last-child) {
+      margin: 0 0.5rem 0 0;
+    }
   }
 }
 </style>
