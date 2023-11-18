@@ -2,10 +2,10 @@
 # yarn lockfile v1
 
 
-"7.css@^0.14.0":
-  version "0.14.0"
-  resolved "https://registry.yarnpkg.com/7.css/-/7.css-0.14.0.tgz#09333d1ccff94d1dda746b35e0ef2a41d61497ab"
-  integrity sha512-uvwKvWLgPkzwqmAiHnPRgnX3auu2ymq2xivi6t6WXULPSsLq8TacxcAUcMWW/JPqr6Zy3fDEXdJMu3jjkpbu8w==
+"7.css@^0.16.0":
+  version "0.16.0"
+  resolved "https://registry.yarnpkg.com/7.css/-/7.css-0.16.0.tgz#e2eed1e8c1ed46eb1993926598183dfa21c32089"
+  integrity sha512-qZleAhXgVqtAc8Wb4mAJRczbGBcUMv6i2wNogXzHgf9Dztky0CqrehWOJtzU05tMw9a9xLeyvumnJeD+WjLiNQ==
 
 "@babel/parser@^7.18.4":
   version "7.20.0"
