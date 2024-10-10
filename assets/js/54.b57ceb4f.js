@@ -1,0 +1,1 @@
+(window.webpackJsonp=window.webpackJsonp||[]).push([[54],{371:function(n,t,u){"use strict";u.r(t);var e=u(14),i=Object(e.a)({},(function(){return(0,this._self._c)("winui-slider",{attrs:{min:"0",max:"10",value:"5"}})}),[],!1,null,null,null);t.default=i.exports}}]);

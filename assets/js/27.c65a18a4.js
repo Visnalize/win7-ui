@@ -1,0 +1,1 @@
+(window.webpackJsonp=window.webpackJsonp||[]).push([[27],{351:function(i,t,s){"use strict";s.r(t);var l=s(14),n=Object(l.a)({},(function(){var i=this._self._c;return i("winui-collapse",{attrs:{open:""}},[i("ul",[i("li",[this._v("🐷")]),this._v(" "),i("li",[this._v("🐔")]),this._v(" "),i("li",[this._v("🐮")])])])}),[],!1,null,null,null);t.default=n.exports}}]);
