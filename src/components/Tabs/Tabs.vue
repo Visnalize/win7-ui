@@ -35,6 +35,7 @@ export default {
   methods: {
     change(tab) {
       this.activeTab = tab;
+      this.$emit("change", this.activeTab);
     },
   },
 };
