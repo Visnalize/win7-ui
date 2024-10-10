@@ -30,6 +30,13 @@ The tabs to display. The `key` is the tab id and the value is the tab label. The
 
 Whether the tabs should be justified.
 
+### `@change` <Badge text="optional" type="tip" />
+
+- Type: `(tabId: string) => void`
+- Default: `undefined`
+
+The function to call when the active tab changes. The function will be called with the active tab ID as an argument.
+
 ## Customization
 
 Use the class name `.winui-tabs` to override/customize the component's styles.
@@ -43,6 +50,16 @@ Use the class name `.winui-tabs` to override/customize the component's styles.
 <div><Demo-Tabs-Justified /></div>
 
 <<< @/src/.vuepress/components/Demo/Tabs/Justified.vue
+
+</Content-Example>
+
+### Listen to tab change
+
+<Content-Example>
+
+<div><Demo-Tabs-Change /></div>
+
+<<< @/src/.vuepress/components/Demo/Tabs/Change.vue
 
 </Content-Example>
 
