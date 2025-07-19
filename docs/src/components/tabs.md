@@ -23,6 +23,13 @@
 
 The tabs to display. The `key` is the tab id and the value is the tab label. The tab id must match the slot name (e.g `<template #tab1>` in the above [example](#usage)).
 
+### `defaultTab` <Badge text="optional" type="tip" />
+
+- Type: `number`
+- Default: `0`
+
+The initial active tab index.
+
 ### `justified` <Badge text="optional" type="tip" />
 
 - Type: `boolean`

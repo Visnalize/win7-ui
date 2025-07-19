@@ -27,10 +27,16 @@ export default {
   name: "WinuiTabs",
   props: {
     tabs: { type: Object, required: true },
+    defaultTab: { type: Number, default: 0 },
     justified: Boolean,
   },
   data() {
-    return { activeTab: Object.keys(this.tabs)[0] };
+    const tabsLength = Object.keys(this.tabs).length;
+    return {
+      activeTab: Object.keys(this.tabs)[
+        Math.max(Math.min(this.defaultTab, tabsLength - 1), 0)
+      ],
+    };
   },
   methods: {
     change(tab) {
