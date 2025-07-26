@@ -43,5 +43,3 @@ export default {
   },
 };
 </script>
-
-<style scoped src="7.css/dist/gui/collapse.css"></style>

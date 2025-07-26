@@ -46,8 +46,6 @@ export default {
 };
 </script>
 
-<style scoped src="7.css/dist/gui/progressbar.css"></style>
-
 <style lang="scss" scoped>
 .winui-progress > div {
   width: var(--progress);

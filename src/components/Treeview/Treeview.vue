@@ -10,8 +10,6 @@ export default {
 };
 </script>
 
-<style src="7.css/dist/gui/treeview.css"></style>
-
 <style lang="scss" scoped>
 ::v-deep.winui-treeview ul {
   line-height: normal;

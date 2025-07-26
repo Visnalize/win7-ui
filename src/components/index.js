@@ -1,3 +1,4 @@
+import "7.css";
 import Balloon from "./Balloon/register";
 import Button from "./Button/register";
 import Checkbox from "./Checkbox/register";

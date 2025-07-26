@@ -10,8 +10,6 @@ export default {
 };
 </script>
 
-<style scoped src="7.css/dist/gui/button.css"></style>
-
 <style lang="scss" scoped>
 .winui-button {
   color: #222;

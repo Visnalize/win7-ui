@@ -39,9 +39,6 @@ export default {
 };
 </script>
 
-<style scoped src="7.css/dist/gui/button.css"></style>
-<style scoped src="7.css/dist/gui/searchbox.css"></style>
-
 <style lang="scss" scoped>
 [type="search"] {
   min-width: auto;

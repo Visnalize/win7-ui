@@ -1,6 +1,6 @@
 <template>
   <winui-link
-    icon="https://visnalize.com/assets/favicon.png"
+    icon="https://visnalize.com/favicon.png"
     href="https://visnalize.com/"
     target="_blank"
   >
