@@ -52,6 +52,10 @@ module.exports = {
         text: "Components",
         link: "/components/",
       },
+      {
+        text: "Changelog",
+        link: "https://github.com/Visnalize/win7-ui/releases",
+      },
     ],
     sidebar: [
       {

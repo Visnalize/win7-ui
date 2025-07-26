@@ -27,6 +27,13 @@ export default {
 
 <style lang="scss" scoped>
 .winui-link {
+  all: unset;
+
+  &::before,
+  &::after {
+    content: none;
+  }
+
   font-family: Segoe UI, sans-serif;
   font-weight: normal;
   font-size: inherit;

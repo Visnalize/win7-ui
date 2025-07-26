@@ -41,7 +41,7 @@
     "lint": "eslint . --ext .vue,.js,.jsx,.cjs,.mjs --fix --ignore-path .gitignore"
   },
   "devDependencies": {
-    "7.css": "^0.16.0",
+    "7.css": "^0.20.0",
     "@rushstack/eslint-patch": "^1.1.0",
     "@vitejs/plugin-legacy": "^2.0.0",
     "@vitejs/plugin-vue2": "^1.1.2",
