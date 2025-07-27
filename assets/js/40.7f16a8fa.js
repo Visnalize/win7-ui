@@ -1,0 +1,1 @@
+(window.webpackJsonp=window.webpackJsonp||[]).push([[40],{362:function(n,i,t){"use strict";t.r(i);var s=t(14),e=Object(s.a)({},(function(){return(0,this._self._c)("winui-link",{attrs:{text:"Visnalize",icon:"https://visnalize.com/favicon.png"}})}),[],!1,null,null,null);i.default=e.exports}}]);
