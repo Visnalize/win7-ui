@@ -25,3 +25,5 @@ export default {
   },
 };
 </script>
+
+<style scoped src="7.css/dist/gui/slider.css"></style>

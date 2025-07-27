@@ -43,3 +43,5 @@ export default {
   },
 };
 </script>
+
+<style scoped src="7.css/dist/gui/checkbox.css"></style>

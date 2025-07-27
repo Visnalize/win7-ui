@@ -32,6 +32,8 @@ export default {
 };
 </script>
 
+<style scoped src="7.css/dist/gui/listbox.css"></style>
+
 <style lang="scss" scoped>
 .winui-listbox {
   list-style: none;
