@@ -9,7 +9,7 @@
       <template #games> games </template>
       <template #softs> softs </template>
     </winui-tabs>
-    <winui-progress progress="50%" class="error" />
+    <winui-progress :progress="50" class="error" />
     <winui-groupbox label="Radio buttons">
       <winui-radio id="theme-light" value="light" name="theme" checked>
         Light
