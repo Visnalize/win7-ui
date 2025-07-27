@@ -50,10 +50,6 @@ export default {
 };
 </script>
 
-<style src="7.css/dist/gui/radiobutton.css" scoped></style>
-<style src="7.css/dist/gui/checkbox.css" scoped></style>
-<style src="7.css/dist/gui/menu.css"></style>
-
 <style lang="scss" scoped>
 [role="menuitem"] {
   ul[role="menu"] > &,
