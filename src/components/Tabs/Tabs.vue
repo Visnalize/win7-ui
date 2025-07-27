@@ -47,6 +47,8 @@ export default {
 };
 </script>
 
+<style scoped src="7.css/dist/gui/tabs.css"></style>
+
 <style lang="scss" scoped>
 [role="tabpanel"] {
   height: 100%;

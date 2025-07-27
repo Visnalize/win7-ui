@@ -33,3 +33,5 @@ export default {
   },
 };
 </script>
+
+<style scoped src="7.css/dist/gui/textbox.css"></style>

@@ -10,3 +10,5 @@ export default {
   props: {},
 };
 </script>
+
+<style scoped src="7.css/dist/gui/balloon.css"></style>
